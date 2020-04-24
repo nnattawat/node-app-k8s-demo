@@ -6,7 +6,7 @@
 
 ### build backend services
 ```bash
-# build and push images
+# build and push images to DockerHub
 cd comments
 docker build -t nnonsung/comments-nodejs .
 docker push nnonsung/comments-nodejs
@@ -37,6 +37,9 @@ kubectl apply -f posts-deployments.yaml
 kubectl apply -f query-deployments.yaml
 kubectl apply -f moderation-deployments.yaml
 kubectl apply -f event-bus-deployments.yaml
+
+# show all running resources
+kubectl get all
 
 # testing posts service locally with NodePort
 kubectl apply -f posts-service.yaml
