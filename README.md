@@ -59,6 +59,9 @@ kubectl apply -f ingress-service.yaml
 
 # show all running resources
 kubectl get all
+
+# to restart deployment that has been applied e.g. posts
+kubectl rollout restart deployment posts-deployment
 ```
 
 Now you should be able to visit react app on `localhost`
