@@ -1,4 +1,4 @@
-# Microservices deployment with k*83 demo
+# Microservices deployment with k8s demo
 
 ## services
 ![alt text](./diagram.png "Logo Title Text 1")
